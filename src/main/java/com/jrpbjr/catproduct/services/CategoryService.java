@@ -49,4 +49,8 @@ public class CategoryService {
         return this.repository.findAll();
     }
 
+    public Optional<Category> getById(String id){
+        return this.repository.findById(id);
+    }
+
 }
